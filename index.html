@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic CGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Academic CGPA Calculator</h2>
+    <a href="https://github.com/yilkal3009/CGPA Calculator" target="_blank" style="color: #007bff; text-decoration: none; font-weight: bold;">
+    <i class="fab fa-github"></i> View on GitHub</a>
+    <div id="setup">
+        <div class="input-group">
+            <label>Previous Cumulative CGPA:</label>
+            <input type="number" id="prevCGPA" step="0.01" placeholder="e.g., 3.20">
+        </div>
+        <div class="input-group">
+            <label>Total Credits Earned Previously:</label>
+            <input type="number" id="prevCredits" placeholder="e.g., 30">
+        </div>
+        <hr>
+        <div class="input-group">
+            <label>Number of Courses (Current Semester):</label>
+            <input type="number" id="numCoursesInput" min="1" placeholder="e.g., 6" oninput="generateCurrentSemesterRows(this)">
+        </div>
+
+        <div id="current-semester-rows"></div>
+
+        <div class="button-group">
+            <button onclick="calculateOverallCGPA()">Calculate CGPA</button>
+             <button onclick="calculateOverallCGPA()">Current Semester</button>
+            <button onclick="clearAll()" class="btn-clear">Clear All</button>
+            <button id="downloadBtn" onclick="downloadReport()" class="btn-download" style="display:none;">Download Report</button>
+        </div>
+    </div>
+
+    <div id="results"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

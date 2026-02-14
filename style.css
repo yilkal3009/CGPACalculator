@@ -1,0 +1,114 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 550px;
+}
+
+h2 {
+    color: #1a73e8;
+    text-align: center;
+    border-bottom: 2px solid #e8f0fe;
+    padding-bottom: 15px;
+}
+
+.semester-box {
+    background: #fafafa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box; /* Important for alignment */
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #1557b0;
+}
+
+.course-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+#results {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+.success { background-color: #e6f4ea; color: #1e8e3e; border: 1px solid #ceead6; }
+.warning { background-color: #fef7e0; color: #f9ab00; border: 1px solid #feefc3; }
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #1a73e8;
+    color: white;
+}
+.course-row input[type="text"] {
+    flex: 2; /* የኮርስ ስም ማስገቢያው ሰፋ እንዲል */
+}
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-clear {
+    background-color: #f44336 !important; /* ቀይ ቀለም ለ Clear */
+}
+
+.btn-download {
+    background-color: #4CAF50 !important; /* አረንጓዴ ለ Download */
+}
+
+button:hover {
+    opacity: 0.9;
+}
